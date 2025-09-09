@@ -1,0 +1,1322 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow';
+    background-color: white;
+}
+
+.common-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+/******Mobile hamburger start  *****/
+
+.mobilemanu {
+    display: none;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -40px;
+  padding-left: 50px; */
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+.header-container {
+    z-index: 2;
+}
+
+.mobilelogo {
+    width: 30px;
+    padding-top: 10px;
+}
+
+/******Mobile hamburger end  *****/
+
+/******Header start  *****/
+.header-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-logo img {
+    width: 90px;
+    position: absolute;
+    top: 10px;
+}
+
+.phone-n-header {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+}
+
+.header-address {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.header-bg-color {
+    background-color: #78dadd;
+}
+
+.header-bg-color ul {
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-bg-color ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 35px;
+
+}
+
+.header-bg-color ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-bg-color ul li a:hover {
+    color: black;
+}
+
+
+/******Hero Section start  *****/
+
+.hero-section {
+    background-image: url(../images/banner-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+
+}
+
+.hero-content {
+    padding-top: 40px;
+}
+
+.hero-content h3 {
+    color: #417de1;
+    font-weight: 900;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.subheading {
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.hero-paragraph {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    padding-bottom: 65px;
+    word-spacing: 1px;
+}
+
+.hero-content button {
+    background-color: #e6ac0f;
+    outline: none;
+    padding: 12px 25px 12px 25px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 75px;
+}
+
+.hero-content button:hover {
+    color: black;
+}
+
+
+
+/******Our Team Section start  *****/
+.our-team {
+    background-color: #f2f6f6;
+}
+
+.our-team-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.our-team-content h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #417de1;
+}
+
+hr {
+    width: 100px;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 3px;
+    background: #417de1;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.cards {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 23%;
+    margin-top: 40px;
+
+}
+
+.card-bg-img1 {
+    background-image: url(../images/pic-photo-john-pispidikis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img2 {
+    background-image: url(../images/pic-photo-michael-greiner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img3 {
+    background-image: url(../images/pic-photo-iman-abou-chakra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img4 {
+    background-image: url(../images/pic-photo-akshata-nayak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img5 {
+    background-image: url(../images/pic-photo-dr-maria-ruiz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img6 {
+    background-image: url(../images/pic-photo-stefen-heuer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img7 {
+    background-image: url(../images/pic-photo-ann-cane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-bg-img8 {
+    background-image: url(../images/pic-photo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 395px;
+    width: 100%;
+    background-position: center;
+}
+
+.card-content {
+    background-color: #7dc0f6;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    color: white;
+    min-height: 115px;
+
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+
+/******common treatment Section start  *****/
+
+.Common-treatment {
+    padding-bottom: 30px;
+}
+
+.treatment-cards {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.treatment-card {
+    width: 30%;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 50px;
+}
+
+.treatment-card-img {
+    width: 24%;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.t-card-content h4 {
+    color: #40dedd;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.t-card-content p {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+
+/******schedule-your Section start  *****/
+
+.schedule-your {
+    background-image: url(../images/banner-schedule-consultation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 525px;
+}
+
+.schedule-content {
+    padding-top: 90px;
+
+}
+
+.schedule-content h1 {
+    color: #417de1;
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.schedule-content h3 {
+    color: #417de1;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+}
+
+.schedule-content button {
+    background-color: #e6ac0f;
+    outline: none;
+    padding: 12px 25px 12px 25px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 75px;
+}
+
+.schedule-content button:hover {
+    color: black;
+}
+
+
+/******Comprehensive care Section start  *****/
+
+.Comprehensive-cards {
+    background-color: #f2f6f6;
+    margin-top: 20px;
+}
+
+.Comprehensive-image1 {
+    width: 50%;
+    background-image: url(../images/pic-physical-therapy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.Comprehensive-image2 {
+    width: 50%;
+    background-image: url(../images/pic-pain-management.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.Comprehensive-image3 {
+    width: 50%;
+    background-image: url(../images/pic-chiropractic-services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.Comprehensive-image4 {
+    width: 50%;
+    background-image: url(../images/pic-massage-therapy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.Comprehensive-content {
+    width: 50%;
+    padding-left: 60px;
+    padding-top: 90px;
+
+
+}
+
+.Comprehensive-card {
+    display: flex;
+}
+
+.Comprehensive-content h1 {
+    font-size: 35px;
+    color: #40dedd;
+}
+
+.Comprehensive-content p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.Comprehensive-content button {
+    background-color: #e6ac0f;
+    outline: none;
+    padding: 12px 25px 12px 25px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+.Comprehensive-content button:hover {
+    color: black;
+}
+
+.Comprehensive-btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/****** Treatment Section start  *****/
+
+.Treatment {
+    padding-bottom: 20px;
+}
+
+.injuries-card {
+    width: 24%;
+    background-color: #f2f6f6;
+    padding: 6px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.treatment-image1 {
+    background-image: url(../images/pic-auto-accident-injuries.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px;
+    width: 100%;
+}
+
+.treatment-image2 {
+    background-image: url(../images/pic-workand-non-work-injuries.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px;
+    width: 100%;
+}
+
+.treatment-image3 {
+    background-image: url(../images/pic-knee-pain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px;
+    width: 100%;
+}
+
+.treatment-image4 {
+    background-image: url(../images/pic-workand-non-work-injuries.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px;
+    width: 100%;
+}
+
+.injuries-card h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.injuries-card p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.injuries-card button {
+    background-color: #e6ac0f;
+    outline: none;
+    padding: 12px 25px 12px 25px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 48%;
+
+}
+
+.injuries-card button:hover {
+    color: black;
+}
+
+.injuries-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.pt-n {
+    padding-top: unset;
+}
+
+/****** CONSULTATION TODAY Section start  *****/
+
+.consultant-today {
+    background-image: url(../images/banner-schedule-down.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 525px;
+}
+
+
+/****** Footer Section start  *****/
+
+.footer-main {
+    background-color: #283b6a;
+    color: white;
+}
+
+.left-footer-content {
+    width: 27%;
+}
+
+.left-footer-content h1 {
+    font-weight: 600;
+}
+
+.left-footer-content .footer-logo {
+    width: 120px;
+}
+
+.right-footer-content {
+    width: 50%;
+}
+
+.footer-logo-main {
+    display: flex;
+    justify-content: center;
+    margin-right: 48px;
+}
+
+.footer-con {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-address {
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+.address-fot {
+    font-size: 14px;
+}
+
+.second {
+
+    display: flex;
+    color: var(--white-color);
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.footer-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-listing h1:before {
+    content: '';
+    width: calc(100% - 40px);
+    height: 5px;
+    background-color: var(--aqua);
+    position: absolute;
+    top: 60px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+
+}
+
+.footer-listing {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-listing ul a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.footer-listing {
+    position: relative;
+
+}
+
+.footer-listing li {
+    padding: 5px 10px 5px 0;
+    font-size: 13px;
+}
+
+.footer-listing li:nth-child(1) {
+    margin-top: 38px;
+}
+
+.footer-listing h1 {
+    font-size: 20px;
+}
+
+.line-footer {
+    margin: unset !important;
+    top: 13px !important;
+    background: #78dadd !important;
+}
+
+.footer-end {
+    background: #14203e;
+}
+
+.footer-end-text {
+    width: 100%;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-icon {
+    color: var(--white-color);
+    font-size: larger;
+    width: 240px;
+}
+
+.icon-img {
+
+    width: 25px;
+    height: 25px;
+}
+
+.footer-address {
+    display: flex;
+}
+
+.footer-address-location {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-end-text {
+    padding: 30px 0;
+}
+
+
+
+
+/****** responisveness section start  *****/
+
+@media (max-width: 479px) and (min-width: 320px) {
+    .main-header {
+        display: none;
+    }
+
+    .mobilemanu {
+        display: block;
+    }
+
+    .hero-content h3 {
+        font-size: 30px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .subheading {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .hero-paragraph {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .hero-section {
+        background-image: url(../images/banner-top.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 252px;
+        background-position: bottom;
+    }
+
+    .hero-paragraph {
+        padding-bottom: 23px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin-top: 40px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .treatment-cards {
+        flex-direction: column;
+    }
+
+    .treatment-card {
+        width: 90%;
+        display: flex;
+        margin-top: 50px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .t-card-content p {
+        font-size: 12px;
+    }
+
+    .t-card-content h4 {
+        font-size: 18px;
+    }
+
+    .schedule-content h1 {
+        font-size: 22px;
+    }
+
+    .schedule-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 42px;
+    }
+
+    .schedule-content h3 {
+        padding-top: 16px;
+        padding-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .schedule-content button {
+        margin-left: 45px;
+    }
+
+    .schedule-your {
+        min-height: 234px;
+        background-position: center;
+    }
+
+    .Comprehensive-card {
+        flex-direction: column;
+    }
+
+    .Comprehensive-image1 {
+        width: 90%;
+        min-height: 235px;
+        margin: auto;
+    }
+
+    .Comprehensive-content {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 18px;
+        margin: auto;
+    }
+
+    .Comprehensive-content p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .Comprehensive-content button {
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    .Comprehensive-content h1 {
+        font-size: 24px;
+    }
+
+    .Comprehensive-image2 {
+        width: 90%;
+        min-height: 234px;
+        margin: auto;
+    }
+
+    .Comprehensive-image3 {
+        width: 90%;
+        min-height: 234px;
+        margin: auto;
+
+    }
+
+    .Comprehensive-image4 {
+        width: 90%;
+        min-height: 234px;
+        margin: auto;
+
+    }
+
+    .Comprehensive-card {
+        margin-top: 20px;
+    }
+
+    .our-team-content h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .injuries-card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .consultant-today {
+        min-height: 244px;
+        background-position: right;
+    }
+
+    .footer-con {
+        flex-direction: column;
+    }
+
+    .left-footer-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .second {
+        flex-direction: column;
+    }
+    .right-footer-content {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .main-header {
+        display: none;
+    }
+    .mobilemanu {
+        display: block;
+    }
+
+
+    .subheading {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .hero-paragraph {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .hero-section {
+        background-image: url(../images/banner-top.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 376px;
+        background-position: bottom;
+    }
+
+    .hero-paragraph {
+        padding-bottom: 23px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin-top: 40px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .card-bg-img1 {
+        height: 675px;
+
+    }
+    .card-bg-img2 {
+        height: 675px;
+
+    }
+    .card-bg-img3 {
+        height: 675px;
+
+    }
+    .card-bg-img4 {
+        height: 675px;
+
+    }
+    .card-bg-img5 {
+        height: 675px;
+
+    }
+    .card-bg-img6 {
+        height: 675px;
+
+    }
+    .card-bg-img7 {
+        height: 675px;
+
+    }
+    .card-bg-img8 {
+        height: 675px;
+
+    }
+
+    .treatment-cards {
+        /* flex-direction: column; */
+    }
+ 
+    .treatment-card {
+        width: 38%;
+        display: flex;
+        margin-top: 50px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .t-card-content p {
+        font-size: 12px;
+    }
+
+    .t-card-content h4 {
+        font-size: 18px;
+    }
+
+    .schedule-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .schedule-content h3 {
+        padding-top: 16px;
+        padding-bottom: 40px;
+    }
+
+    .schedule-content button {
+        margin-left: 45px;
+    }
+
+    .schedule-your {
+        min-height: 450px;
+        background-position: right;
+    }
+
+    .Comprehensive-image1 {
+        width: 50%;
+        min-height: 235px;
+    }
+
+    .Comprehensive-content {
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 18px;
+    }
+
+    .Comprehensive-content p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .Comprehensive-content button {
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    .Comprehensive-content h1 {
+        font-size: 24px;
+    }
+
+    .Comprehensive-image2 {
+        width: 50%;
+        min-height: 234px;
+    }
+
+    .Comprehensive-image3 {
+        width: 50%;
+        min-height: 234px;
+
+    }
+
+    .Comprehensive-image4 {
+        width: 50%;
+        min-height: 234px;
+
+    }
+    .our-team-content h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .injuries-card {
+        width: 46%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .injuries-card p {
+        padding-right: 10px;
+    }
+    .consultant-today {
+        min-height: 450px;
+        background-position: right;
+    }
+
+    .footer-con {
+        flex-direction: column;
+    }
+
+    .left-footer-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .second {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .right-footer-content {
+        width: 90%;
+        margin: auto;
+    }
+    .footer-icon {
+        margin: auto;
+    }
+    .left-footer-content h1  {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1281px) and (min-width: 1024px) { 
+    .header-strip {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header-bg-color ul{
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .header-bg-color ul li {
+        margin-left: 15px;
+    }
+    .hero-section {
+     
+        min-height: 445px;
+    }
+    .hero-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .hero-content button {
+        padding: 18px 40px 18px 40px;
+        font-size: 19px;
+    
+    }
+    .cards {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .card-content {
+        min-height: 134px;
+    }
+    .our-team-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .schedule-content{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .Comprehensive-content {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .Comprehensive-content button {
+        margin-top: 16px;
+    }
+    .treatment-image1 {
+        min-height: 142px;
+    }
+    .treatment-image2 {
+        min-height: 142px;
+    }
+    .treatment-image3{
+        min-height: 142px;
+    }
+    .treatment-image4 {
+        min-height: 142px;
+    }
+    .injuries-card button  {
+        width: 75%;
+    }
+    .consultant-today {
+        background-position: right;
+    }
+    .footer-con{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
